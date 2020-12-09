@@ -7,14 +7,14 @@
 #root{
   display: flex;
   height: 100vh;
-  background: red;
+
 }
 
 #wrapper{
+  position: relative;
   display: flex;
   width: 700px;
   height: 500px;
-  background: yellow;
   margin: auto;
 }
 
@@ -37,4 +37,28 @@
   height:100%;
   object-fit: cover;
   object-position: center;
+}
+
+i{
+  cursor: pointer;
+}
+
+.nav{
+  position:absolute;
+  bottom: 10px;
+  left:50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding:20px;
+  border-radius: 50px;
+
+}
+
+.nav i{
+  color: white;
+  padding: 5px;
+}
+
+.nav i.active{
+  color: blue;
 }
